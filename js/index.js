@@ -1,4 +1,4 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
 // header__nav - list, header__nav-mobile - buttons
 // HEADER NAVIGATION
@@ -27,15 +27,19 @@ document.querySelector('body').addEventListener('click', (ev) => {
 const swiper1 = new Swiper('.first__wrapper', {
   // Optional parameters
   init: true,
-  loop: true,
-  centeredSlides: true,
+  loop: false,
+  centeredSlides: false,
   initialSlide: 0,
-  slidesPerView: 5,
+  slidesPerView: "auto",
   spaceBetween: 20,
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
   },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
   breakpoints: {
     // when window width is >= 320px
     0: {
@@ -48,7 +52,7 @@ const swiper1 = new Swiper('.first__wrapper', {
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
       spaceBetween: 10
     },
     767.98: {
@@ -61,7 +65,8 @@ const swiper1 = new Swiper('.first__wrapper', {
       slidesPerView: 4,
     },
     1440: {
-      slidesPerView: 4.5,
+      slidesPerView: "auto",
+      // slidesPerView: 4.5,
     },
   }
 });
@@ -69,10 +74,11 @@ const swiper1 = new Swiper('.first__wrapper', {
 //second
 const swiper2 = new Swiper('.swiper', {
   // Optional parameters
-  init: true,
-  loop: true,
-  initialSlide: 1,
-  slidesPerView: 1.2,
+  // init: true,
+  // loop: false,
+  // centeredSlides: false,
+  // initialSlide: 0,
+  slidesPerView: "auto",
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -96,10 +102,11 @@ const swiper2 = new Swiper('.swiper', {
       slidesPerView: 1,
     },
     1070: {
-      slidesPerView: 1,
+      // slidesPerView: 1,
     },
     1440: {
-      slidesPerView: 1.2,
+      // slidesPerView: 1.2,
+      // spaceBetween: 20
     },
 
   }

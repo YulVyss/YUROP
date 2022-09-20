@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/high-angle-shot-of-metal-handcuffs-isolated 1.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <title>ЮрОпыт</title>
@@ -24,12 +25,15 @@
               <li class="header__nav-item nav__item"><a class="header__nav-link" href="#five">Вопросы и ответы</a></li>
             </ul>
             <form action="#" method="POST" class="fird__form fird__form_mobile" id="header__form">
-              <h4 class="fird__subtitle subtitle">Отправить вам ссылку?</h4>
+              <h4 class="fird__subtitle subtitle">Отправить Вам ссылку?</h4>
               <p class="fird__text text">Оставьте свой номер и мы пришлем ссылку на приложение</p>
               <div class="fird__form-wrapper fird__form-wrapper_m">
-                <input type="text" class="fird__input" placeholder="X XXX XXX XX XX">
-                <button type="submit" class="fird__btn">Получить</button>
+                <input type="tel" class="fird__input" placeholder="X XXX XXX XX XX" id="header-input">
+                <button type="submit" class="fird__btn btn1">Получить</button>
               </div>
+              <p id="form1__warning">
+                <span class="form__warning_message">Номер телефона должен быть введен полностью!</span>
+              </p>
               <p class="fird__text text">или скачивайте его в магазинах </p>
               <div class="fird__links">
                 <a href="https://www.apple.com/ru/app-store/" target="_blank" class="fird__link"></a>
@@ -50,44 +54,44 @@
       <div class="container container_visible">
         <section class="first" id="first">
           <h2 class="first__title title">Окажем юридическую помощь по любым вопросам, связанным с проверками МВД и
-            налоговых органов.</h2>
+            налоговых органов</h2>
           <div class="first__columns">
             <p class="first__text text">Первое в России приложение юридической помощи</p>
             <p class="first__text text">Услуги оказывают только квалифицированные специалисты</p>
-            <p class="first__text text">Мы гарантируем конфиденциальность предоставленных вами данных</p>
+            <p class="first__text text">Мы гарантируем конфиденциальность предоставленных Вами данных</p>
           </div>
-          <h3 class="first__subtitle subtitle">Мы готовы оказать вам юридическую помощь в следующих сферах</h3>
+          <h3 class="first__subtitle subtitle">Мы готовы оказать Вам юридическую помощь в следующих сферах</h3>
           <!-- <div class="first__scroll">
           <div class="first__fakediv"></div>
         </div> -->
           <div class="first__wrapper">
             <div class="swiper-scrollbar"></div>
             <div class="first__cards swiper-wrapper">
-              <div class="first__card card card_1 swiper-slide">
+              <div class="first__card card card_1 swiper-slide" id="s1">
                 <h4 class="card__title">Экономическая безопасность
                   и противодействие коррупции</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
                   <li class="card__hover-item">Составление документов</li>
                 </ul>
               </div>
-              <div class="first__card card card_2 swiper-slide">
+              <div class="first__card card card_2 swiper-slide" id="s2">
                 <h4 class="card__title">Налоговые преступления/ правонарушения
                   (в том числе вопросы, связанные
                   с проверками ФНС)</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
                   <li class="card__hover-item">Составление документов</li>
                 </ul>
               </div>
-              <div class="first__card card card_3 swiper-slide">
+              <div class="first__card card card_3 swiper-slide" id="s3">
                 <h4 class="card__title">Уголовные дела
                   (любой сложности) </h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
@@ -96,7 +100,7 @@
               </div>
               <div class="first__card card card_4 swiper-slide">
                 <h4 class="card__title">Незаконный оборот наркотических средств</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
@@ -105,7 +109,7 @@
               </div>
               <div class="first__card card card_5 swiper-slide ">
                 <h4 class="card__title">По делам несовершеннолетних</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
@@ -114,7 +118,7 @@
               </div>
               <div class="first__card card card_6 swiper-slide">
                 <h4 class="card__title">Уголовный розыск</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
@@ -124,16 +128,16 @@
               <div class="first__card card card_7 swiper-slide">
                 <h4 class="card__title">Административные правонарушения
                   (в том числе в сфере потребительского рынка)</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
                   <li class="card__hover-item">Составление документов</li>
                 </ul>
               </div>
-              <div class="first__card card card_8 swiper-slide">
+              <div class="first__card card card_8 swiper-slide" id="s8">
                 <h4 class="card__title">Безопасность дорожного движения</h4>
-                <p class="card__text text">928 решенных дел</p>
+                <p class="card__text text">более 5000 решенных дел</p>
                 <ul class="card__hover-list">
                   <li class="card__hover-item">Консультация юриста</li>
                   <li class="card__hover-item">Правовой анализ документов</li>
@@ -151,26 +155,26 @@
             <div class="second__card card">
               <h4 class="card__title">Компетентные специалисты</h4>
               <p class="card__text text">Наше преимущество - богатый правоприменительный опыт. Стаж работы юристов не
-                менее 15 лет. Высококлассные специалисты, лично изучившие и собравшие тысячи дел</p>
+                менее 15 лет. Высококлассные специалисты, лично изучившие и собравшие тысячи дел.</p>
             </div>
             <div class="second__card card">
               <h4 class="card__title">Самые низкие цены </h4>
               <p class="card__text text">Самые низкие цены на рынке юридических услуг.
                 Цены на услуги фиксированные.
                 Без скрытых
-                и дополнительный платежей. Мы не навязываем вам дополнительные услуги</p>
+                и дополнительный платежей. Мы не навязываем вам дополнительные услуги.</p>
             </div>
             <div class="second__card card">
               <h4 class="card__title">В любое время на связи</h4>
               <p class="card__text text">Юристы на связи круглосуточно для всех городов России без предварительной
                 записи.
-                Наши юристы свяжутся с вами в кротчайшие сроки
+                Наши юристы свяжутся с Вами в кротчайшие сроки.
               </p>
             </div>
             <div class="second__card card">
               <h4 class="card__title">Юрист в кармане</h4>
               <p class="card__text text">Вам не нужен компьютер или личное посещение для получения консультации.
-                Достаточно скачать приложение «Юр-опыт» на мобильный телефон</p>
+                Достаточно скачать приложение «Юр-опыт» на мобильный телефон.</p>
             </div>
           </div>
         </section>
@@ -184,17 +188,14 @@
               <p class="fird__text text">Специалисты проводят онлайн-консультации в любое время, без перерыва на обед.
                 Предварительная запись не нужна.</p>
 
-              <p class="fird__text text">Если вам нужна юридическая помощь, просто закажите консультацию и наш
-                специалист
-                свяжется с вами в кратчайшие сроки.</p>
+              <p class="fird__text text">Если Вам нужна юридическая помощь, просто закажите консультацию и наш
+                специалист свяжется с вами в кратчайшие сроки.</p>
 
               <div class="fird__cards">
                 <div class="fird__card card card_pink">
                   <p class="card__icon card__icon_1">
                   </p>
-                  <h4 class="card__title">Круглосуточно,
-                    без очереди,
-                    без записи</h4>
+                  <h4 class="card__title">Круглосуточно, без очереди, без записи</h4>
                   <p class="card__text text">Специалисты проводят онлайн-консультации
                     в любое время, без перерыва на обед. Предварительная запись не нужна.
                   </p>
@@ -204,16 +205,14 @@
                     <p class="card__icon card__icon_2"></p>
                     <h4 class="card__title">Приватно</h4>
                     <p class="card__text text">Вы сообщаете специалисту только ту информацию, которую посчитаете нужной.
-                      Можно
-                      получить консультацию под псевдонимом.</p>
+                      Можно получить консультацию под псевдонимом.</p>
                   </div>
                   <div class="fird__card card card_blue">
                     <p class="card__icon card__icon_3"></p>
                     <h4 class="card__title">В чате или по аудиосвязи</h4>
                     <p class="card__text text">Общайтесь с юристами в чате, получайте звонки через приложение Юр-Опыт,
-                      в любых мессенджерах, посредством видеосвязи
-                      и электронной почты.
-                      Решать вам</p>
+                      в любых мессенджерах, посредством видеосвязи и электронной почты.
+                      Решать Вам.</p>
                   </div>
                 </div>
               </div>
@@ -223,12 +222,15 @@
             </div>
           </div>
           <form action="#" method="POST" class="fird__form" id="fird__form">
-            <h4 class="fird__subtitle subtitle">Отправить вам ссылку?</h4>
+            <h4 class="fird__subtitle subtitle">Отправить Вам ссылку?</h4>
             <p class="form__text text">Оставьте свой номер и мы пришлем ссылку на приложение</p>
             <div class="fird__form-wrapper">
-              <input type="text" class="fird__input" placeholder="X XXX XXX XX XX">
-              <button type="submit" class="fird__btn">Получить</button>
+              <input type="tel" class="fird__input" placeholder="X XXX XXX XX XX" id="second-input">
+              <button type="submit" class="fird__btn btn2">Получить</button>
             </div>
+            <p id="form2__warning">
+              <span class="form__warning_message">Номер телефона должен быть введен полностью!</span>
+            </p>
             <p class="form__text text">или скачивайте его в магазинах </p>
             <div class="fird__links">
               <a href="https://www.apple.com/ru/app-store/" target="_blank" class="fird__link"></a>
@@ -244,9 +246,9 @@
             <div class="swiper-wrapper">
               <div class="fourth__slide fourth-slide fourth-slide_1 swiper-slide">
                 <div class="fourth-slide__description">
-                  <h4 class="fourth-slide__subtitle subtitle">Выбирете, в какой сфере вам нужна помощь юриста</h4>
-                  <p class="fourth-slide__text text">Если не знаете какой раздел выбрать, мы сами подберем для вас
-                    специалиста</p>
+                  <h4 class="fourth-slide__subtitle subtitle">Выберите, в какой сфере вам нужна помощь юриста</h4>
+                  <p class="fourth-slide__text text">Если не знаете какой раздел выбрать, мы сами подберем для Вас
+                    специалиста.</p>
                   <p class="fourth-slide__number">1</p>
                   <div class="fourth-slide__element">
                     <p>Не знаю, какой раздел
@@ -262,7 +264,7 @@
               <div class="fourth__slide fourth-slide fourth-slide_2 swiper-slide">
                 <div class="fourth-slide__description">
                   <h4 class="fourth-slide__subtitle subtitle">Укажите услуги </h4>
-                  <p class="fourth-slide__text text">Вы можете выбрать как одну, так и несколько услуг сразу</p>
+                  <p class="fourth-slide__text text">Вы можете выбрать как одну, так и несколько услуг сразу.</p>
                   <p class="fourth-slide__number">2</p>
                 </div>
                 <div class="fourth-slide__img">
@@ -273,9 +275,9 @@
               <div class="fourth__slide fourth-slide fourth-slide_3 swiper-slide">
                 <div class="fourth-slide__description">
                   <h4 class="fourth-slide__subtitle subtitle">Укажите способ связи
-                    и подробно опишите вашу проблему</h4>
-                  <p class="fourth-slide__text text">Подробно описывайте ваш вопрос, пркрипляйте фото и локументы. Чем
-                    подробнее изложите, тем быстрее юрист окажет вам помощь</p>
+                    и подробно опишите Вашу проблему</h4>
+                  <p class="fourth-slide__text text">Подробно описывайте Ваш вопрос, прикрепляйте фото и документы. Чем
+                    подробнее изложите, тем быстрее юрист окажет Вам помощь.</p>
                   <p class="fourth-slide__number">3</p>
                 </div>
                 <div class="fourth-slide__img">
@@ -285,10 +287,10 @@
               </div>
               <div class="fourth__slide fourth-slide fourth-slide_4 swiper-slide">
                 <div class="fourth-slide__description">
-                  <h4 class="fourth-slide__subtitle subtitle">Специалист свяжется с вами
+                  <h4 class="fourth-slide__subtitle subtitle">Специалист свяжется с Вами
                     и проконсультирует</h4>
-                  <p class="fourth-slide__text text">Подробно описывайте ваш вопрос, пркрипляйте фото и локументы. Чем
-                    подробнее изложите, тем быстрее юрист окажет вам помощь</p>
+                  <p class="fourth-slide__text text">Подробно описывайте Ваш вопрос, прикрепляйте фото и документы. Чем
+                    подробнее изложите, тем быстрее юрист окажет Вам помощь.</p>
                   <p class="fourth-slide__number">4</p>
                 </div>
                 <div class="fourth-slide__img">
@@ -306,9 +308,9 @@
           <div class="five__grid-wrapper">
             <div class="five__block">
               <h4 class="five__subtitle subtitle spoller-title">Как быстро ответит специалист?</h4>
-              <p class="five__text text spoller-text">Наши юристы свяжутся с вами
+              <p class="five__text text spoller-text">Наши юристы свяжутся с Вами
                 в кратчайшие сроки. Либо в обращении
-                вы можете самостоятельно указать удобное для вас время</p>
+                Вы можете самостоятельно указать удобное для вас время.</p>
             </div>
             <div class="five__block">
               <h4 class="five__subtitle subtitle spoller-title">В каких городах работает сервис?</h4>
@@ -319,25 +321,25 @@
               <h4 class="five__subtitle subtitle spoller-title">Какие юристы меня консультируют?</h4>
               <p class="five__text text spoller-text">Вас консультируют высококлассные юристы с огромным
                 правоприменительным опытом.
-                Стаж работы юристов не менее 15 лет</p>
+                Стаж работы юристов не менее 15 лет.</p>
             </div>
             <div class="five__block">
               <h4 class="five__subtitle subtitle spoller-title">Какие вы даете гарантии анонимности?</h4>
-              <p class="five__text text spoller-text">Мы не требуем от вас указывать реальные данные о вашей личности и
+              <p class="five__text text spoller-text">Мы не требуем от Вас указывать реальные данные о Вашей личности и
                 событии.
-                Кроме того вы сами выбираете способ связи. И самое главное, что мы
+                Кроме того, Вы сами выбираете способ связи. И самое главное, что мы
                 в кратчайшие сроки удаляем сведения
-                о вашем обращении.</p>
+                о Вашем обращении.</p>
             </div>
             <div class="five__block">
               <h4 class="five__subtitle subtitle spoller-title">Какие документы можно вам прислать?</h4>
-              <p class="five__text text spoller-text">Изначально вы присылаете нам документы на свое усмотрения, касаемо
-                вашего дела.
-                В случае необходимости дополнительных сведений, наши юристы в кратчайшие сроки сообщат вам об этом,
+              <p class="five__text text spoller-text">Изначально Вы присылаете нам документы на свое усмотрение, касаемо
+                Вашего дела.
+                В случае необходимости дополнительных сведений, наши юристы в кратчайшие сроки сообщат Вам об этом,
                 чтобы более качественно оказать услугу.</p>
             </div>
             <div class="five__block">
-              <h4 class="five__subtitle subtitle spoller-title">Помогаете ли вы начинающим юристам?</h4>
+              <h4 class="five__subtitle subtitle spoller-title">Помогаете ли Вы начинающим юристам?</h4>
               <p class="five__text text spoller-text">Да, мы с удовольствием поделимся опытом с начинающими юристами.
               </p>
             </div>
@@ -357,9 +359,20 @@
             <a href="" class="footer__soc-link vk"></a>
           </div>
           <p class="footer__text">«Юр-опыт», 2022 </p>
+          <a href=" http://lk.testapp1.ru/auth" target="_blank" class="footer__link footer__link_s">lk.testapp1.ru</a>
+
+          <!-- <p class="footer__text">Общество с ограниченной ответственностью «Селлер НН»
+            ООО&nbsp;«Селлер НН»</p>
+          <p class="footer__text">Юридический и почтовый адрес</p>
+          <address class="footer__text">607243, Нижегородская область, Арзамасский р-н, с. Шатовка, ул. Зеленая, д. 14
+          </address>
+          <p class="footer__text">ОГРН 1215200029846</p>
+          <p class="footer__text">ОКПО 49443232</p>
+          <p class="footer__text">ИНН 5243040798</p>
+          <p class="footer__text">КПП 524301001</p> -->
           <p class="footer__text">Все права защищены. Предложение
             не является публичной офертой</p>
-          <a href="https://datmar.ru/" class="footer__link footer__link_s">Разработано в DATMAR</a>
+          <a href="https://datmar.ru/" target="_blank" class="footer__link footer__link_s">Разработано в DATMAR</a>
 
         </div>
         <ul class="footer__nav">
@@ -380,7 +393,7 @@
               (в том числе вопросы, связанные с проверками ФНС) </a></li>
           <li class="footer__nav-item"><a href="#fird__form">Уголовные дела
               (любой сложности) </a></li>
-          <li class="footer__nav-item"><a href="#fird__form">Незаконный оборот наркотических средств </a></li>
+          <li class="footer__nav-item"><a href="#fird__form">Незаконный оборот наркотических средств</a></li>
           <li class="footer__nav-item"><a href="#fird__form">По делам несовершеннолетних</a></li>
           <li class="footer__nav-item"><a href="#fird__form">Уголовный розыск</a></li>
           <li class="footer__nav-item"><a href="#fird__form">Административные правонарушения
@@ -388,12 +401,15 @@
           <li class="footer__nav-item"><a href="#fird__form">Безопасность дорожного движения</a></li>
 
         </ul>
-        <a href="https://datmar.ru/" class=" footer__link footer__link_m">Разработано в DATMAR</a>
+        <a href="https://datmar.ru/" target="_blank" class=" footer__link footer__link_m">Разработано в DATMAR</a>
       </div>
     </div>
   </footer>
-
-  <script type="module" src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/index.js" defer></script>
+  <script src="./js/jquery-3.6.0.min.js" defer></script>
+  <script src="./js/jquery.inputmask.js" defer></script>
+  <script src="./js/formValidation.js" defer></script>
 </body>
 
 </html>
